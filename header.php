@@ -25,7 +25,6 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />			
 	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/img/favicon.ico">
 	<link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/img/apple-touch-icon.png">
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('title'); ?> RSS Feed" href="/feed/" />
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -39,6 +38,7 @@
         }
     </script>
 	<?php wp_head(); ?>
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 </head>
 <body <?php body_class(); ?>>
 

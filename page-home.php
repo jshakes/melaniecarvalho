@@ -4,16 +4,13 @@ if ( have_posts() ) : the_post();
 ?>
     
   <div class="wrapper clearfix" id="home">
+
+    <?php if(has_post_thumbnail()): ?>
     
-        <section class="s1" id="content">
-            <?php the_content(); ?>
-        </section>
-        
-        <?php if(has_post_thumbnail()): ?>
-        <section class="s3">
-            <?php the_post_thumbnail("homepage"); ?>
-        </section>
-        <?php endif; ?>
+        <?php the_post_thumbnail("homepage"); ?>
+
+    <?php endif; ?>
+
   </div>
   
 <?php

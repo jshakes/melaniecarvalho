@@ -15,7 +15,7 @@ while(have_posts()):
 
         <?php if(has_post_thumbnail()): ?>
 
-        <a href="<?php the_permalink(); ?>">
+        <a href="<?php the_permalink(); ?>" rel="gallery">
             <div class="overlay">
                 <div class="overlay-content">
                     <div class="container">
@@ -24,7 +24,10 @@ while(have_posts()):
                 </div>
             </div>
             <?php 
-            the_post_thumbnail("post-thumbnail", array("onload" => "fadeOnLoad(this);")); 
+            $attrs = array(
+                "onload" => "fadeOnLoad(this);"
+            );
+            the_post_thumbnail("post-thumbnail", $attrs); 
             ?>
         </a>
 

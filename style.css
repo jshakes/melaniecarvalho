@@ -79,9 +79,10 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 body{
   font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   background: #fff;
   color: #333;
+  padding: 0 4em;
 }
 
 p{  line-height: 1.6em; margin: 0 0 10px 0;  }
@@ -97,7 +98,7 @@ h4{ font-size: 1.4em; }
 
 /* -------------------- WIDTHS -------------------- */
 
-header, section.s1, .container, footer{  width: 960px; clear: both; margin: 0 auto;  }
+header, section.s1, .container, footer{  clear: both; margin: 0 auto;  }
 h4{ font-size: 1.2em; }
 h5{ font-size: 1em;   }
 
@@ -106,7 +107,7 @@ h5{ font-size: 1em;   }
 section.s1{  width: 168px; }
 section.s2{  width: 366px; } 
 section.s3{  width: 564px; } 
-section.s4{  width: 762px; }
+section.s4{   }
 
 /* -------------------- LAYOUT -------------------- */
 
@@ -142,8 +143,10 @@ aside nav li.current_page_item a, aside nav li a:hover{    color: #ec5cb1;   }
 #works{ -webkit-transition-property: height, width; -moz-transition-property: height, width; -ms-transition-property: height, width; -o-transition-property: height, width; transition-property: height, width; }
 #works article {-webkit-transition-property: left, right, top; -moz-transition-property: left, right, top; -ms-transition-property: left, right, top; -o-transition-property: left, right, top; transition-property: left, right, top; }
 
-#works article:nth-child(1){   margin-top: 2em;  }
-#works article:nth-child(3){   margin-top: .5em;  }
+#works article:nth-child(2){   margin-top: -2em;  }
+#works article:nth-child(3){   margin-top: -2.5em;  }
+#works article:nth-child(4){   margin-top: -1em;  }
+#works article:nth-child(5){   margin-top: 1em;  }
 
 #works article.featured{   width: 366px;  }
 
@@ -163,6 +166,7 @@ article.work.single{    width: 600px;    }
 article.work.single h3{   margin-bottom: 1em;   }
 article.work.single img{   max-width: 100%; height: auto;   }
 article.work.single iframe{    width: 100%; height: 400px;   }
+.fancybox-skin{   border-radius: 0; -moz-border-radius: 0; -o-border-radius: 0; -webkit-border-radius: 0;  }
 
 /* -------------------- CLASSES -------------------- */
 

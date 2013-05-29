@@ -35,9 +35,9 @@ masonryInit = function(){
         for(var i = 0; i < 3; i++){
          
             if($(".work").length > work_counter){
-                var $work = $(".work")[work_counter++];
-                $(this).after($work.outerHTML);
-                $work.remove();
+                var work = $(".work")[work_counter++];
+                $(this).after(work.outerHTML);
+                $(work).remove();
             }
         }
     });

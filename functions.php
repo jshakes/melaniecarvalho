@@ -12,7 +12,8 @@ function register_post_types(){
     	),
     	'public' => true,
     	'has_archive' => true,
-    	'supports' => array('title', 'editor', 'thumbnail', 'page-attributes') 
+    	'supports' => array('title', 'editor', 'thumbnail', 'page-attributes'),
+      'taxonomies' => array('category')
   	)
   );
 
@@ -40,7 +41,7 @@ add_action( 'init', 'register_post_types', 0 );
 
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size( 366, 500, false);
-add_image_size("case-study", 800, 500, false);
+add_image_size("case-study", 800, 600, false);
 add_image_size("homepage", 762, 500, false);
 
 
@@ -98,5 +99,7 @@ function new_excerpt_more($more) {
 	return ' <a class="moretag" href="'. get_permalink($post->ID) . '">Read more</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+
 
 ?>

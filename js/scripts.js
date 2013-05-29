@@ -5,17 +5,18 @@
 $(function(){
 
     // portfolio hover
-    $("html.no-touch #works article a").hover(function(){
+    $(".hover-title a").hover(function(){
        
        $(this).children(".overlay").stop(false, true).fadeIn(100);
     },
     function(){
     
        $(this).children(".overlay").stop(false, true).fadeOut(200);
-    }).fancybox({
+    })
+
+    $(".fancybox a").fancybox({
         type: 'ajax'
     });
-
     // End onready
 });
 
@@ -25,11 +26,26 @@ $(window).load(function(){
 });
 
 masonryInit = function(){
+
+    // shuffle
+
+    var work_counter = 0;
+    $(".term").each(function(i){
+        //take an uncategorised painting on every third category and stick it in
+        for(var i = 0; i < 3; i++){
+         
+            if($(".work").length > work_counter){
+                var $work = $(".work")[work_counter++];
+                $(this).after($work.outerHTML);
+                $work.remove();
+            }
+        }
+    });
     
-    $('#works').masonry({
+    $('.bricks').masonry({
         // options
-        itemSelector : '.work',
-        columnWidth : 168,
+        itemSelector : '.brick',
+        columnWidth: 168,
         gutterWidth: 30
     }).css({visibility: 'visible'});
 }

@@ -24,16 +24,10 @@ if(!empty($categories)):
             <?php if(!empty($img)): ?>
 
             <a href="<?php echo get_term_link($term); ?>" rel="gallery">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <div class="container">
-                            <h3><?php echo $term->name; ?></h3>
-                        </div>
-                    </div>
-                </div>
                 <?php echo $img; ?>
+                <h3><?php echo $term->name; ?></h3>
             </a>
-
+            
             <?php endif; ?>
 
         </article>

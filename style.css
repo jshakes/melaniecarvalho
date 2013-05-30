@@ -132,13 +132,10 @@ aside nav ul li ul{   padding-left: 1em;  }
 /* works */
 
 .bricks{  visibility: hidden; }
-.bricks article{    text-align: left; position: relative; overflow: hidden; margin: 0 0 30px; float: left; background: #ec5cb1; width: 168px; box-shadow: 0 0 10px rgba(0, 0, 0, .5); -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .5); -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .5); -o-box-shadow: 0 0 10px rgba(0, 0, 0, .5);  }
-.bricks article a{   display: block; line-height: 0; }
-.bricks article a img{  opacity: 0; height: auto; width: 100%;  }
-.bricks article a div.overlay{    position: absolute; width: 100%; color: #ec5cb1; z-index: 255; display: none; background: #fff; bottom: 0;  }
-.bricks article a div.overlay .overlay-content{    display: table; width: 100%; height: 100%;    }
-.bricks article a div.overlay .overlay-content .container{    padding: 1em; display: table-cell; vertical-align: middle; height: 100%; line-height: 1; }
-.bricks article a div.overlay .overlay-content .container h3{   margin: 0.3em auto;  }
+.bricks article{    text-align: left; position: relative; margin: 0 0 1.3em; float: left; width: 168px;   }
+.bricks article a{   display: block; text-decoration: none; }
+.bricks article a img{  opacity: 0; height: auto; width: 100%; box-shadow: 0 0 10px rgba(0, 0, 0, .5); -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .5); -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .5); -o-box-shadow: 0 0 10px rgba(0, 0, 0, .5); }
+.bricks article a h3{   margin: 1em 0 0; font-size: 1.1em;  }
 
 .bricks, .bricks article, {-webkit-transition-duration: 0.7s; -moz-transition-duration: 0.7s; -ms-transition-duration: 0.7s; -o-transition-duration: 0.7s; transition-duration: 0.7s; }
 .bricks{ -webkit-transition-property: height, width; -moz-transition-property: height, width; -ms-transition-property: height, width; -o-transition-property: height, width; transition-property: height, width; }

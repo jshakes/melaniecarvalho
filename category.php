@@ -4,17 +4,25 @@
     <?php 
 
     global $wp_query;
-    $cat = $wp_query->query["cat"];
 
-    print_r($wp_query->query);
-
-    query_posts(array(
+    $args = array(
         'post_type' => 'work',
         'posts_per_page' => -1,
         'orderby' => 'menu_order',
         'order' => 'ASC',
         'cat' => $cat
-    ));
+    );
+
+    if(isset($wp_query->query["cat"])){
+
+        $args["cat"] = $wp_query->query["cat"];
+    }
+    elseif(isset($wp_query->query["category_name"])){
+
+        $args["category_name"] = $wp_query->query["category_name"];
+    }
+
+    query_posts($args);
 
     $i = 1;
     while(have_posts()):

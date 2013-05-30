@@ -25,7 +25,6 @@ if(!empty($categories)):
 
             <a href="<?php echo get_term_link($term); ?>" rel="gallery">
                 <?php echo $img; ?>
-                <h3><?php echo $term->name; ?></h3>
             </a>
             
             <?php endif; ?>

@@ -15,7 +15,9 @@ $(function(){
     })
 
     $(".fancybox a").fancybox({
-        type: 'ajax'
+        type: 'ajax',
+        nextEffect: 'fade',
+        prevEffect: 'fade',
     });
     // End onready
 });

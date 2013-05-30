@@ -6,6 +6,8 @@
     global $wp_query;
     $cat = $wp_query->query["cat"];
 
+    print_r($wp_query->query);
+
     query_posts(array(
         'post_type' => 'work',
         'posts_per_page' => -1,

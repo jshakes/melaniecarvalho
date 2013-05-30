@@ -18,6 +18,8 @@ $(function(){
         type: 'ajax',
         nextEffect: 'fade',
         prevEffect: 'fade',
+        nextSpeed: 600,
+        prevSpeed: 600
     });
     // End onready
 });

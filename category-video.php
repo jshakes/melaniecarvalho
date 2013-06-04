@@ -27,7 +27,7 @@
         while(have_posts()): 
             the_post();
             ?>
-            <article class="video" id="video-<?php the_id(); ?>">
+            <article class="work video" id="video-<?php the_id(); ?>">
                 <h3><?php the_title(); ?></h3>
                 <?php the_content(); ?>
             </article>

@@ -1,4 +1,6 @@
 <?php 
+get_header();
+
 if ( have_posts() ): the_post();
 ?>
       
@@ -15,4 +17,6 @@ if ( have_posts() ): the_post();
 	
 <?php
 endif;
+
+get_footer();
 ?>

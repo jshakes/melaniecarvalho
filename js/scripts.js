@@ -15,11 +15,18 @@ $(function(){
     })
 
     $(".fancybox a").fancybox({
-        type: 'ajax',
+        beforeLoad: function() {
+            this.title = $(this.element).find("div.caption").html();
+        },
         nextEffect: 'fade',
         prevEffect: 'fade',
         nextSpeed: 600,
-        prevSpeed: 600
+        prevSpeed: 600,
+        helpers:{
+            title : {
+                type : 'inside' // 'float', 'inside', 'outside' or 'over'
+            }
+        }
     });
     // End onready
 });
@@ -28,6 +35,11 @@ $(window).load(function(){
 
     masonryInit();
 });
+
+fadeOverlay = function(){
+
+    $("img").css({visibility: 'visible'});
+}
 
 masonryInit = function(){
 

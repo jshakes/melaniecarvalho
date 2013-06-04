@@ -157,8 +157,9 @@ footer{   padding: 2em 0;  }
 
 /*work*/
 
+article.work .caption{  display: none;  }
 article.work.single h3{   margin-bottom: 1em;   }
-article.work.single img{   height: auto;   }
+article.work.single img{   height: auto; visibility: hidden;   }
 article.work.single iframe{    width: 600px; height: 400px;   }
 .fancybox-skin{   border-radius: 0; -moz-border-radius: 0; -o-border-radius: 0; -webkit-border-radius: 0;  }
 

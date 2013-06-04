@@ -41,7 +41,7 @@ add_action( 'init', 'register_post_types', 0 );
 
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size( 366, 500, false);
-add_image_size("case-study", 800, 600, false);
+add_image_size("case-study", 800, 800, false);
 add_image_size("homepage", 762, 500, false);
 
 

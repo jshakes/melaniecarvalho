@@ -9,8 +9,7 @@
         'post_type' => 'work',
         'posts_per_page' => -1,
         'orderby' => 'menu_order',
-        'order' => 'ASC',
-        'cat' => $cat
+        'order' => 'ASC'
     );
 
     if(isset($wp_query->query["cat"])){
@@ -32,7 +31,7 @@
 
             <?php if(has_post_thumbnail()): ?>
 
-            <a href="<?php the_permalink(); ?>"<?php if(!in_category("video")): ?> rel="gallery"<?php endif; ?>>
+            <a href="<?php the_permalink(); ?>" rel="gallery">
                 <?php 
                 $attrs = array(
                     "onload" => "fadeOnLoad(this);"

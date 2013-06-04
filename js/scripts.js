@@ -36,11 +36,11 @@ masonryInit = function(){
     var work_counter = 0;
     $(".term").each(function(i){
         //take an uncategorised painting on every third category and stick it in
-        for(var i = 0; i < 3; i++){
+        for(var i = 0; i < 2; i++){
          
             if($(".work").length > work_counter){
                 var work = $(".work")[work_counter++];
-                $(this).after(work.outerHTML);
+                $(this).before(work.outerHTML);
                 $(work).remove();
             }
         }
@@ -49,7 +49,6 @@ masonryInit = function(){
     $('.bricks').masonry({
         // options
         itemSelector : '.brick',
-        columnWidth: 168,
         gutterWidth: 30
     }).css({visibility: 'visible'});
 }

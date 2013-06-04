@@ -17,7 +17,7 @@ while($uncategorised->have_posts()):
 
         <?php if(has_post_thumbnail()): ?>
 
-        <a href="<?php the_permalink(); ?>" rel="gallery">
+        <a href="<?php the_permalink(); ?>">
             <?php 
             $attrs = array(
                 "onload" => "fadeOnLoad(this);"

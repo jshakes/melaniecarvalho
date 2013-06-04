@@ -212,8 +212,7 @@ a.btn, button, input[type=submit], input[type=reset]{ padding: 6px; color: #000;
   section{   margin: 0 0 20px !important; }
   img, iframe{   max-width: 100%; height: auto; }
 
-  .bricks article{   width: 135px;   }
-  .bricks article.featured{   width: 100%;   }
+  .bricks article{   width: 100%;   }
 }
 
 /* -------------------- PSEUDO -------------------- */

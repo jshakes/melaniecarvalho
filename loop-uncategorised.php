@@ -18,7 +18,7 @@ while($uncategorised->have_posts()):
 
         <?php if(has_post_thumbnail()): ?>
 
-        <a href="<?php $fullsize[0]; ?>">
+        <a href="<?php echo $fullsize[0]; ?>">
             <?php 
             $attrs = array(
                 "onload" => "fadeOnLoad(this);"

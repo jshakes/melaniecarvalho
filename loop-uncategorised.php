@@ -1,17 +1,18 @@
 <?php
+
 $args = array(
     "post_type" => "work",
     "posts_per_page" => -1,
-    "category__not_in" => get_all_category_ids()
+    "category_name" => "homepage"
 );
 
-$uncategorised = new WP_Query($args);
+$homepage_items = new WP_Query($args);
 
 $i = 1;
 
-while($uncategorised->have_posts()):
+while($homepage_items->have_posts()):
     
-    $uncategorised->the_post();
+    $homepage_items->the_post();
     $fullsize = wp_get_attachment_image_src(get_post_thumbnail_id(), "case-study");
     ?>
     <article class="work post brick fancybox" id="post-<?php the_id(); ?>">

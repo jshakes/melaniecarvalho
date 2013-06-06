@@ -2,7 +2,7 @@
 
 $args = array(
     'hide_empty'    => true, 
-    'exclude'       => array('uncategorized')
+    'exclude'       => array('homepage')
 ); 
 
 $categories = apply_filters( 'taxonomy-images-get-terms', 'category', $args );

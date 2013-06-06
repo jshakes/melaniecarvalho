@@ -37,4 +37,6 @@
     ?>
 </div>
 
+<p><a href="/">&larr; Back to all works</a></p>
+
 <?php get_footer(); ?>
